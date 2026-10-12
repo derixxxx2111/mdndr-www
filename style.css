@@ -13,7 +13,7 @@ nav a:hover{color:var(--txt)}
 .hero p{color:var(--mut);font-size:19px;max-width:680px}
 section{padding:48px 0;border-top:1px solid var(--line)}
 h2{font-size:26px;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card h3{font-size:18px;margin-bottom:8px}
 .card p,.mut{color:var(--mut)}
@@ -22,7 +22,7 @@ h2{font-size:26px;margin-bottom:20px}
 .btn{display:inline-block;margin-top:14px;margin-right:10px;padding:10px 18px;border-radius:10px;background:var(--acc);color:#111;font-weight:700;text-decoration:none}
 .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
 table{border-collapse:collapse;width:100%}
-td{padding:10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td{overflow-wrap:anywhere;padding:10px 0;border-bottom:1px solid var(--line);vertical-align:top}
 td:first-child{color:var(--mut);width:42%;padding-right:16px}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:14px}
 @media(max-width:560px){nav a{margin-left:12px;font-size:14px}.hero{padding:56px 0 40px}}
