@@ -1,0 +1,51 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0b1020;--mut:#5b6478;--line:#e6e8ef;--bg:#f7f8fb;--acc:#84cc16;--acc2:#4d7c0f}
+html{scroll-behavior:smooth}
+body{font:17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.14em;text-decoration:none;font-size:15px}
+.logo i{width:26px;height:26px;border-radius:7px;background:var(--ink);display:grid;place-items:center;color:var(--acc);font-style:normal;font-size:13px;letter-spacing:0}
+nav a{text-decoration:none;color:var(--mut);margin-left:26px;font-size:15px;font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#ecfccb 0,transparent 60%),linear-gradient(#fff,var(--bg));border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-top:84px;padding-bottom:84px}
+.tag{display:inline-block;font-size:13px;font-weight:600;color:var(--acc2);background:#f0fdd4;border:1px solid #d9f99d;padding:5px 12px;border-radius:99px;margin-bottom:22px}
+h1{font-size:clamp(36px,5.4vw,60px);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-bottom:22px}
+h1 em{font-style:normal;color:var(--acc2)}
+.lead{font-size:19px;color:var(--mut);max-width:560px}
+.cta{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:12px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.p{background:var(--ink);color:#fff}.btn.s{border:1px solid var(--line);background:#fff}
+.phones{position:relative;height:520px}
+.phone{position:absolute;width:230px;border-radius:34px;border:8px solid var(--ink);overflow:hidden;box-shadow:0 30px 60px -20px rgba(11,16,32,.35);background:#fff}
+.phone img{display:block;width:100%}
+.phone.a{right:150px;top:0;transform:rotate(-4deg)}
+.phone.b{right:0;top:50px;transform:rotate(4deg)}
+section{padding:96px 0}
+.kick{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc2);margin-bottom:12px}
+h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.02em;line-height:1.15;margin-bottom:16px;max-width:720px}
+.sub{color:var(--mut);max-width:680px;margin-bottom:48px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff}
+.card b{display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:#f0fdd4;color:var(--acc2);margin-bottom:16px;font-size:18px}
+.card h3{font-size:17px;margin-bottom:6px}
+.card p{color:var(--mut);font-size:15px}
+.dark{background:var(--ink);color:#fff}
+.dark .sub,.dark p{color:#a9b0c2}
+.dark .kick{color:var(--acc)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.steps{list-style:none;display:grid;gap:14px}
+.steps li{border:1px solid #1f2740;border-radius:16px;padding:20px 22px;background:#11182d}
+.steps strong{display:block;color:#fff;margin-bottom:4px}
+.facts{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.facts div{display:grid;grid-template-columns:200px 1fr;padding:15px 24px;border-bottom:1px solid var(--line);font-size:16px}
+.facts div:last-child{border:0}
+.facts span{color:var(--mut)}
+.facts a{color:var(--acc2);font-weight:600;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:960px){.hero .wrap,.split{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.phones{height:440px;max-width:420px}.phone{width:190px}.phone.a{right:auto;left:0}}
+@media(max-width:600px){nav a:not(.lang){display:none}.grid{grid-template-columns:1fr}section{padding:64px 0}.hero .wrap{padding-top:52px;padding-bottom:52px}.facts div{grid-template-columns:1fr;gap:2px}.phones{height:380px}.phone{width:160px}.phone.b{right:0}}
